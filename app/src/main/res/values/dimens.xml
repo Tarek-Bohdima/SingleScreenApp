@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="drawablePadding">8dp</dimen>
+    <dimen name="UdacityLogoV">40dp</dimen>
+    <dimen name="touching">150dp</dimen>
+    <dimen name="UdacityLogoH">30dp</dimen>
+</resources>

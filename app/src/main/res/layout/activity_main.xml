@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.singlescreenapp.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/TouchingHandMA"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bot"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/Udacitylogo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/UdacityLogoV"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/udacitylogo1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:drawableLeft="@drawable/ic_launcher_weblink"
+                android:drawablePadding="@dimen/drawablePadding"
+                android:drawableStart="@drawable/ic_launcher_weblink"
+                android:fontFamily="@string/font1"
+                android:gravity="center_vertical"
+                android:linksClickable="true"
+                android:text="@string/website"
+                android:textAllCaps="false"
+                android:textColorLink="@color/link"
+                android:textSize="@dimen/fontsize1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="map"
+                android:drawableLeft="@drawable/ic_launcher_location"
+                android:drawablePadding="@dimen/drawablePadding"
+                android:drawableStart="@drawable/ic_launcher_location"
+                android:fontFamily="@string/font1"
+                android:gravity="center_vertical"
+                android:linksClickable="true"
+                android:text="@string/address"
+                android:textColorLink="@color/link"
+                android:textSize="@dimen/fontsize1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:drawableLeft="@drawable/ic_launcher_phone"
+                android:drawablePadding="@dimen/drawablePadding"
+                android:drawableStart="@drawable/ic_launcher_phone"
+                android:fontFamily="@string/font1"
+                android:gravity="center_vertical"
+                android:linksClickable="true"
+                android:text="@string/phone"
+                android:textColorLink="@color/link"
+                android:textSize="@dimen/fontsize1" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
